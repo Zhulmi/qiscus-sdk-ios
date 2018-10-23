@@ -145,7 +145,7 @@ You can learn from the figure below to understand what really happened when call
 ### Updating a User Profile and Avatar
 
 After your user account is created, sometimes you may need to update a user information, such as 
-ging user avatar. You can use method `Qiscus.updateProfile()` to make changes to your account.
+update user avatar. You can use method `Qiscus.updateProfile()` to make changes to your account.
 
 ```swift
 Qiscus.updateProfile(username: "Your Name", avatarURL: "https://myimage.com/myNewIma...", onSuccess: {
