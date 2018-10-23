@@ -110,11 +110,13 @@ Qiscus.getNonce(withAppId: YOUR_APP_ID, onSuccess: { (nonce) in
 ### Update User Profile And Profile Image
 
 ```
-Qiscus.updateProfile(username: username, avatarURL: avatar, onSuccess: { 
-            print("success profile")
-        }) { (error) in
-            print("error update profile: \(error)")
-        }
+let extras = JSON("{\"name\":\"john\",\"age\":26,\"class\":\"mca\"}")
+
+ Qiscus.updateProfile(username: username, avatarURL: avatarURL, extras: "\(extras)", onSuccess: {
+        print("success update profile")
+  }) { (erorrMessage) in
+        print("Qiscus. update error \(erorrMessage)")
+  }
 ```
 
 ### Login Status
